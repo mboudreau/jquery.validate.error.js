@@ -8,8 +8,10 @@ You have to include both javascript files (jquery.validate before the extension)
 ```html
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 <script src="jquery.validate.error.js"></script>
+```
 
 Then after, add the `data-error-msg` attribute on your inputs/selects/textareas to add a custom error message.  This works exactly like using the [error message javascript object](http://jqueryvalidation.org/validate/) with validate, but the attribute has higher priority than the javascript version.  Then make sure that your form is validated by doing `$('form').validate();`.
 
 ```html
 <input type="text" name="name" required data-error-msg="Please enter your name">
+```
